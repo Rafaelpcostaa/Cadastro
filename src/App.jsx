@@ -15,18 +15,19 @@ function App() {
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
-
+  
   return (
     <div className='App'>
       <div className="caixa-login">
         <form action="">
           <Titulo Icone={faUserCircle}/>
           <br/>
-          <Input nome={"Nome do Usuário:"} tipo={"Text"} Icone={faUser}/>
+          <Input nome={"Usuário:"} tipo={"Text"} Icone={faUser}/>
           <br/>
-          <Input nome={"Digite uma Senha:"} tipo={showPassword ? "text" : "password"} value={password} onChange={(e) => setPassword(e.target.value)} Icone={faLock}/>
+          <Input nome={"Senha:"} tipo={showPassword ? "text" : "password"} value={password} onChange={(e) => setPassword(e.target.value)} Icone={faLock}/>
           <br/>
           <div className="mostrar_senha">
+          
             <label htmlFor="">
               <input type="checkbox" checked={showPassword} onChange={togglePasswordVisibility} />Mostrar Senha
             </label>

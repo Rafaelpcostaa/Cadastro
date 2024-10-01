@@ -1,0 +1,41 @@
+.caixa_input{
+    position: relative;
+    width: 310px;
+    height: 30px 0;
+    border-bottom: 2px solid #000;
+  }
+  
+  .caixa_input label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color:  #000;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .caixa_input input:focus~label,
+  .caixa_input input:valid~label {
+      top: -5px;
+  }
+  
+  .caixa_input input {
+    width: 90%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #000000;
+    padding: 0 35px 0 5px;
+  }
+  
+  .caixa_input span {
+    position: absolute;
+    right: 8px;
+    color: #000000;
+    font-size: 1.2em;
+    line-height: 57px
+  }

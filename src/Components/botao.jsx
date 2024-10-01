@@ -1,7 +1,9 @@
+import style from './Css/botao.module.css'
+
 function Botao(){
     return(
-        <div>
-             <button type="submit">Cadastrar</button>
+        <div className={style}>
+             <button type="submit">Entrar</button>
         </div>
     )
 }
